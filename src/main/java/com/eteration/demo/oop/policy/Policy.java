@@ -18,6 +18,7 @@ public abstract class Policy implements Cloneable {
 	public Policy(Customer owner) {
 		super();
 		this.owner = owner;
+		owner.addPolicy(this);
 	}
 
 	public List<Risk> getRisks() {

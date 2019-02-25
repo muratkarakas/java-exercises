@@ -32,7 +32,7 @@ public abstract class Policy implements Cloneable {
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 		Policy clone = (Policy) super.clone();
-		clone.risks = new ArrayList<Risk>();
+		clone.risks = new ArrayList<>();
 		for (Risk risk : risks)
 			clone.risks.add(risk);
 		return clone;

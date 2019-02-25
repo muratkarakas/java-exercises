@@ -25,16 +25,16 @@ public class GenericsPlaygroud {
 		
 		
 
-		List<? extends Printable> producer = new ArrayList<Printable>();
+		List<? extends Printable> producer = new ArrayList<>();
 		read(producer);
 
 
-		List<? super Printable> consumer = new ArrayList<Printable>();
+		List<? super Printable> consumer = new ArrayList<>();
 
 		write(consumer);
 
 
-		List<Printable> consumerproducer = new ArrayList<Printable>();
+		List<Printable> consumerproducer = new ArrayList<>();
 		consumerproducer.add(new Book("content"));
 
 		readAndWrite(consumerproducer);
@@ -46,9 +46,9 @@ public class GenericsPlaygroud {
 		/* Generic Classes */
 		
 
-		PrinterManager<Book> bookPrinter = new PrinterManager<Book>();
+		PrinterManager<Book> bookPrinter = new PrinterManager<>();
 		
-		PrinterManager<Newspaper> newspaperPrinter = new PrinterManager<Newspaper>();
+		PrinterManager<Newspaper> newspaperPrinter = new PrinterManager<>();
 		
 		Book book = new Book("JS The Good Parts");
 		

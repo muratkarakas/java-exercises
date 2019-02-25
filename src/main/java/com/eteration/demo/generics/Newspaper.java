@@ -1,6 +1,6 @@
 package com.eteration.demo.generics;
 
-public class Newspaper extends Printable {
+public class Newspaper implements Printable {
 	private String author;
 	private String text;
 	private String name;
@@ -34,8 +34,9 @@ public class Newspaper extends Printable {
 		this.name = name;
 	}
 
+	@Override
 	public String getContent() {
-		return text;
+		return text +" printed";
 	}
 
 }

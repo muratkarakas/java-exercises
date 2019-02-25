@@ -1,5 +1,5 @@
 package com.eteration.demo.generics;
 
-public abstract class Printable {
-	public abstract String getContent();
+public interface Printable {
+	public  String getContent();
 }
